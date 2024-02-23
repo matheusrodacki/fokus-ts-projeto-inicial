@@ -145,5 +145,11 @@ document.addEventListener('TarefaFinalizada', () => {
         atualizarUI();
     }
 });
+document.addEventListener('TarefaFinalizada', () => {
+    if (estadoInicial.tarefaSelecionada) {
+        estadoInicial.tarefaSelecionada.concluida = true;
+        atualizarUI();
+    }
+});
 atualizarUI();
 //# sourceMappingURL=script-crud.js.map
